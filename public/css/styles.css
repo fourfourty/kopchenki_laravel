@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/roboto-v20-cyrillic-regular.eot?2de0c3fff51ca8ba09b269ece5ed99db);
+  /* IE9 Compat Modes */
+  src: local(""), url(/fonts/roboto-v20-cyrillic-regular.eot?2de0c3fff51ca8ba09b269ece5ed99db?#iefix) format("embedded-opentype"), url(/fonts/roboto-v20-cyrillic-regular.woff2?f3cc56e19e8c2b9706bd63a75c2d2291) format("woff2"), url(/fonts/roboto-v20-cyrillic-regular.woff?3a9d859c0b19407fa725dbc9929526ff) format("woff"), url(/fonts/roboto-v20-cyrillic-regular.ttf?1bfc1feecd499c8410a66f40379f9e85) format("truetype"), url(/fonts/roboto-v20-cyrillic-regular.svg?1b1af1e4b3a278058097e96a21f80371#Roboto) format("svg");
+  /* Legacy iOS */
+}
+html, body {
+  font-family: "Roboto";
+}
+
+.hide {
+  display: none;
+}
+
+.wrapper {
+  max-width: 1170px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.headers {
+  text-align: center;
+  font-size: 50px;
+  color: #CD6858;
+}
+
+@media (max-width: 576px) {
+  .headers {
+    font-size: 40px;
+  }
+}

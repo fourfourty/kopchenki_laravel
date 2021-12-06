@@ -1,0 +1,226 @@
+.page-d {
+  padding: 50px 0;
+  box-shadow: inset 0px 10px 5px -3px rgba(50, 50, 50, 0.75);
+}
+
+.page-d__wrapper {
+  flex-flow: row-reverse;
+  align-items: baseline;
+}
+
+.feedback-form__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-d__contacts {
+  width: 45%;
+  background-color: #CD6858;
+}
+
+.contacts__head {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
+
+.page-d__form {
+  width: 45%;
+}
+
+.feedback-form {
+  min-width: 375px;
+  max-width: 420px;
+}
+
+.feedback-form__contacts-name,
+.feedback-form__contacts-email {
+  width: 45%;
+  height: 50px;
+  outline: none;
+  border-radius: 5px;
+  color: #CD6858;
+  font-family: "Roboto";
+  font-size: 14px;
+  border: 1px solid #DADADE;
+  padding-left: 10px;
+}
+
+.feedback-form__subject {
+  display: flex;
+  flex-flow: column;
+  padding: 20px 0 20px 0;
+}
+
+.feedback-form__subject-input,
+.feedback-form__subject-textarea {
+  min-height: 50px;
+  max-height: 100px;
+  max-width: 98%;
+  resize: vertical;
+  height: 50px;
+  outline: none;
+  border: 1px solid #DADADE;
+  border-radius: 5px;
+  color: #CD6858;
+  font-family: "Roboto";
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.feedback-form__subject-textarea {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.feedback-form__contacts-email:hover,
+.feedback-form__contacts-email:active,
+.feedback-form__contacts-email:focus,
+.feedback-form__contacts-name:hover,
+.feedback-form__contacts-name:active,
+.feedback-form__contacts-name:focus,
+.feedback-form__subject-input:hover,
+.feedback-form__subject-input:active,
+.feedback-form__subject-input:focus,
+.feedback-form__subject-textarea:hover,
+.feedback-form__subject-textarea:active,
+.feedback-form__subject-textarea:focus {
+  border: 1px solid #CD6858;
+}
+
+.feedback-form__contacts-email:valid,
+.feedback-form__contacts-name:valid,
+.feedback-form__subject-input:valid,
+.feedback-form__subject-textarea:valid {
+  border-color: green;
+}
+
+.feedback-form__submit {
+  position: relative;
+  background-color: #eaeaea;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.feedback-form__submit-btn {
+  position: relative;
+  font-size: 25px;
+  background-color: #CD6858;
+  color: white;
+  text-shadow: -1px 1px black;
+  box-shadow: 5px 0px 5px 0px rgba(46, 50, 50, 0.75);
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+}
+
+.feedback-form__submit-btn:hover {
+  background-color: #ce4b36;
+  transition: 0.5s;
+}
+
+.send {
+  -webkit-animation: animate 3s;
+          animation: animate 3s;
+}
+
+@-webkit-keyframes animate {
+  50% {
+    transform: translateX(135%);
+  }
+  to {
+    box-shadow: -5px 0px 5px 0px rgba(46, 50, 50, 0.75);
+    background-color: green;
+  }
+}
+
+@keyframes animate {
+  50% {
+    transform: translateX(135%);
+  }
+  to {
+    box-shadow: -5px 0px 5px 0px rgba(46, 50, 50, 0.75);
+    background-color: green;
+  }
+}
+.contacts__icons {
+  display: flex;
+  padding: 15px;
+  font-size: 25px;
+  color: #1b1b1c;
+  flex-flow: column;
+  border-top: 2px solid white;
+}
+
+.contacts__discript {
+  font-size: 25px;
+  color: #fff;
+  padding: 10px;
+}
+
+.icons__link {
+  display: flex;
+  place-items: center;
+  text-decoration: none;
+  padding-top: 10px;
+  align-self: flex-start;
+}
+
+.icons__link:hover {
+  transform: translateX(10px);
+  transition: 0.5s;
+}
+
+.icons__link:focus,
+.icons__link:active {
+  transform: translateX(10px);
+  outline: 1px solid #fff;
+  border: none;
+  text-decoration: none;
+}
+
+.icons__discript {
+  font-size: 20px;
+  padding-left: 15px;
+  color: #fff;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .page-d__wrapper {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .page-d__contacts {
+    width: 100%;
+  }
+
+  .page-d__form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .feedback-form__contacts-name,
+.feedback-form__contacts-email {
+    width: 45%;
+  }
+}
+@media (max-width: 375px) {
+  .feedback-form__contacts,
+.feedback-form__subject {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .feedback-form__submit {
+    margin-left: 10px;
+    width: 95%;
+  }
+}
